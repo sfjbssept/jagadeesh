@@ -10,4 +10,7 @@ public interface IProductService {
 	public List<Product> getAllProducts();
 	
 	Optional<Product> getProduct(Integer Id);
+	
+	Product updateProduct(Product product, Integer Id);
+	void deleteProduct(Integer Id);
 }
