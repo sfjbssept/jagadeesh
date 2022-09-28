@@ -4,9 +4,10 @@ import com.fms.entity.Flight;
 import com.fms.repo.IAdminFlightRepo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
-
+@Service
 public class AdminFlightServiceImpl implements IAdminFlightService{
 
 	@Autowired
