@@ -10,8 +10,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
+import org.springframework.kafka.support.serializer.JsonSerializer;
+import org.springframework.web.bind.annotation.GetMapping;
 
-import com.fasterxml.jackson.databind.JsonSerializer;
+import com.kafka.entity.User;
+
+//import com.fasterxml.jackson.databind.JsonSerializer;
 
 @Configuration
 public class kafkaPublisherConfig {
@@ -26,6 +30,15 @@ public class kafkaPublisherConfig {
 		return new DefaultKafkaProducerFactory<String, Object>(configs);
 		
 	}
+	
+	
+	@GetMapping("/publishjson")
+	public String publishMessage() {
+		User user = new User(101, "Jagadeesh killi" , new String[] {"Appalarajupuram", "visakhapatnam"});
+		template.send(topic, user);
+		return null;
+	}
+	
 	
 	@Bean
 	public KafkaTemplate<String, Object> kafkaTemplate(){
