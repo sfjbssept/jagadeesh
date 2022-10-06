@@ -32,12 +32,11 @@ public class kafkaPublisherConfig {
 	}
 	
 	
-	@GetMapping("/publishjson")
-	public String publishMessage() {
-		User user = new User(101, "Jagadeesh killi" , new String[] {"Appalarajupuram", "visakhapatnam"});
-		template.send(topic, user);
-		return null;
-	}
+	/*
+	 * @GetMapping("/publishjson") public String publishMessage() { User user = new
+	 * User(101, "Jagadeesh killi" , new String[] {"Appalarajupuram",
+	 * "visakhapatnam"}); template.send(topic, user); return null; }
+	 */
 	
 	
 	@Bean
