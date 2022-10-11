@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Student from 'src/app/Entity/Student';
 
 @Component({
   selector: 'app-userform',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userform.component.css']
 })
 export class UserformComponent implements OnInit {
+
+student: Student = new Student();
+
 
   username:String= "";
   age:number=0;
