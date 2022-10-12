@@ -10,7 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { RegisteredstudentComponent } from './components/register/registeredstudent/registeredstudent.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ContactComponent,
     AboutComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    RegisteredstudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+  HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
