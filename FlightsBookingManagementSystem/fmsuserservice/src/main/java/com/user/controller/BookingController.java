@@ -31,6 +31,12 @@ public class BookingController {
 	@Autowired
 	private BookingService bookingService;
 	
+	@GetMapping("/getuser")
+	public List<User> getUsers()
+	{
+		return userService.getUsers();
+	}
+	
 	
 	@PostMapping("/adduser")
 	public User createUser(@RequestBody User user)
@@ -44,7 +50,7 @@ public class BookingController {
 		
 		HttpHeaders headers = new HttpHeaders();
 		HttpEntity<String > httpEntity = new HttpEntity<String>(headers);
-		String url = "http://fms-admin-service/getAllFlights";
+		String url = "http://admin-service/getAllFlights";
 		ResponseEntity<String> responce=restTemplate.exchange(url, HttpMethod.GET, httpEntity, String.class);
 		
 		String flightDetails = responce.getBody();
