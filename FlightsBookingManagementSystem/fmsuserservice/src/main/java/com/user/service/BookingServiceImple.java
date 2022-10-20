@@ -4,12 +4,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.user.entity.Booking;
 import com.user.repo.UserBookingRepository;
 
-@Service
 public class BookingServiceImple implements BookingService{
 
 	@Autowired
