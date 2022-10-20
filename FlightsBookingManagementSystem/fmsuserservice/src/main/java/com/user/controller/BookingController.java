@@ -19,6 +19,7 @@ import com.user.entity.User;
 import com.user.service.BookingService;
 import com.user.service.UserService;
 
+@RestController
 public class BookingController {
 
 	@Autowired
