@@ -1,9 +1,16 @@
 
 export default class Flight {
-    firstname:string= " ";
-    lastname: string = " ";
-    age:number = 0;
+    flightNo:number=0;
+    fromPlace: string = " ";
+    toPlace: string = " ";
+    startDateTime: string = " ";
+    endDateTime: string = " ";
+    scheduledDays: string = " ";
+    instrumentName: string = " ";
+    busiSeats:number = 0;
+    nonbusSeats:number = 0;
+    flightModel: string = " ";
+    ticketCost:number=0;
     class:number = 0 ;
-    subject:string = " ";
-    gender:string= " "
+    noOfRows:number=0;
 }
