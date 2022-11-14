@@ -9,6 +9,10 @@ import { AddAirlineComponent } from './components/add-airline/add-airline.compon
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { UserComponent } from './components/user/user.component';
+import { FlightDetailsComponent } from './components/flight-details/flight-details.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { UserComponent } from './components/user/user.component';
     AddAirlineComponent,
     HomeComponent,
     ContactComponent,
-    UserComponent
+    UserComponent,
+    FlightDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

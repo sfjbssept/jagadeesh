@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Flight from 'src/app/Entity/Flight';
+import { AdminService } from 'src/app/service/admin.service';
 
 @Component({
   selector: 'app-add-airline',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddAirlineComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  flight : Flight = new Flight();
+  save() {
+    const observables = this.adminService.createFlight(this.flight);
+    observables.subscribe(
+      (response: any) => {
+        console.log(response);
+      },
+      function (error: any) {
+        console.log(error);
+        alert('Something went wrong try again!');
+      }
+    );
   }
+
+  constructor(public adminService: AdminService) {}
+
+  ngOnInit(): void {}
 
 }

@@ -1,6 +1,6 @@
 
 export default class Flight {
-    flightNo:number=0;
+    flightNo:Number=0;
     fromPlace: string = " ";
     toPlace: string = " ";
     startDateTime: string = " ";
