@@ -11,6 +11,7 @@ export default class Flight {
     nonbusSeats:number = 0;
     flightModel: string = " ";
     ticketCost:number=0;
-    class:number = 0 ;
     noOfRows:number=0;
+    seatCapacity:number = 0;
+    mealType:string="";
 }

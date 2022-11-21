@@ -9,19 +9,9 @@ const BASE_URL="http://localhost:7091";
 })
 export class AdminService {
 
-  createFlight(flight: {
-    flightNo:Number;
-    fromPlace: string;
-    toPlace: string;
-    startDateTime: string;
-    endDateTime: string;
-    scheduledDays: string;
-    instrumentName: string;
-    busiSeats:number;
-    nonbusSeats:number;
-    flightModel: string;
-    ticketCost:number;
-    noOfRows:number;
+  createFlight(flight: {flightNo:Number;fromPlace: string;toPlace: string;startDateTime: string;
+    endDateTime: string;scheduledDays: string;instrumentName: string;busiSeats:number;nonbusSeats:number;flightModel: string;
+    ticketCost:number;noOfRows:number;
   }) {
     return this.http.post(BASE_URL+"/addflight", flight);
   }

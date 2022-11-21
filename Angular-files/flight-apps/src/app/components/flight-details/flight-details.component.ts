@@ -8,7 +8,7 @@ import { AdminService } from 'src/app/service/admin.service';
   styleUrls: ['./flight-details.component.css']
 })
 export class FlightDetailsComponent implements OnInit {
-  flight: Flight[] = [];
+  flights: Flight[] = [];
 
   title : string = "Flight Details";
   constructor(private adminService : AdminService) { }
@@ -17,7 +17,7 @@ export class FlightDetailsComponent implements OnInit {
     const data = this.adminService.getAllFlightDetails();
     data.subscribe((response) => {
       console.log(response);
-      this.flight = response as Flight[];
+      this.flights = response as Flight[];
     });
   }
 
