@@ -1,0 +1,40 @@
+<div class="container">
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">bookingId</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="booking.id" class="form-control"
+        id="validationCustom01" placeholder="Enter Flight" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">user</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="booking.user" class="form-control"
+        id="validationCustom01" placeholder="Enter Flight" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">flightid</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="booking.flightid" class="form-control"
+        id="validationCustom01" placeholder="Enter Flight" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">seatcount</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="booking.seatcount" class="form-control"
+        id="validationCustom01" placeholder="Enter Flight" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+
+
+  
+    <div style="text-align: center;" class="col-12">
+      <button (click)="save()" class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  
+  
+  </form>
+</div>

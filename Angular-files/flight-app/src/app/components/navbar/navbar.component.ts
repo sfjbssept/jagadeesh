@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  logginUser: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    //this.logginUser="admin";
   }
 
 }

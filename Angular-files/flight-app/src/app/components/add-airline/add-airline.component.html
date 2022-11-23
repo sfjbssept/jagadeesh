@@ -1,1 +1,131 @@
-<p>add-airline works!</p>
+
+<div class="container">
+
+
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">flightNo</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="flight.flightNo" class="form-control"
+        id="validationCustom01" placeholder="Enter Flight" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">from place</label>
+      <input [ngModelOptions]="{standalone: true}" type="text" [(ngModel)]="flight.fromPlace" class="form-control"
+        id="validationCustom02" placeholder="From place" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">toPlace</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.toPlace" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+  
+   
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">startDateTime</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.startDateTime" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">endDateTime</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.endDateTime" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">scheduledDays</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.scheduledDays" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">instrumentName</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.instrumentName" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">busiSeats</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.busiSeats" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">nonbusSeats</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.nonbusSeats" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">flightModel</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.flightModel" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">mealType</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.mealType" 
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">ticketCost</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.ticketCost" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">noOfRows</label>
+      <input [ngModelOptions]="{standalone: true}" [(ngModel)]="flight.noOfRows" placeholder="PCM, PCMB, PCB etc"
+        type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide your Subject Combination
+      </div>
+    </div>
+  
+    <div style="text-align: center;" class="col-12">
+      <button (click)="save()" class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  
+  
+  </form>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+<h3> {{title}} </h3>
+   <table class="table" >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Flight No</th>
+        <th scope="col">From</th>
+        <th scope="col">To</th>
+        <th scope="col">Start Date Time</th>
+        <th scope="col">End Date Time</th>
+        <th scope="col">Scheduled Days</th>
+        <th scope="col">Flight Model</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let f of flights">
+        <td>{{f.flightNo}}</td>
+        <td>{{f.fromPlace}}</td>
+        <td>{{f.toPlace}}</td>
+        <td>{{f.startDateTime}}</td>
+        <td>{{f.endDateTime}}</td>
+        <td>{{f.scheduledDays}}</td>
+        <td>{{f.flightModel}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

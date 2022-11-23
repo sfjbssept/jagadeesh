@@ -6,10 +6,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" routerLink="" href="#">Home</a>
-          <a class="nav-link" routerLink="addAirlines" href="#">AddAirlines</a>
-          <a class="nav-link" routerLink="about" href="#">About</a>
-          <a class="nav-link" routerLink="contact" href="#">Contact Us</a>
+         <!--*ngIf ="logginUser == 'admin'"-->
+          <a class="nav-link active"  aria-current="page" routerLink="/home">Home</a>
+          <a class="nav-link"  routerLink="/addAirlines">AddAirlines</a>
+          <a class="nav-link"  routerLink="about" href="#">About</a>
+          <a class="nav-link"  routerLink="contact" href="#">Contact Us</a>
+          <a class="nav-link"  routerLink="/flightdetails">FlightDetails</a>
+          <a class="nav-link"  routerLink="/flightBooking">FlightBooking</a>
+         
         </div>
       </div>
     </div>
